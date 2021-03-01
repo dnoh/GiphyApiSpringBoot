@@ -1,0 +1,18 @@
+Test Spring Boot Project for Calling GIPHY Search API
+
+Endpoints:
+/search/{search term}
+
+How to Run:
+Unzip the Zip file and and put in your API Key where it says to and run the command below:
+- docker run -it --env GIPHY_API_KEY=<Insert Api Key Here> -p8080:8080 giphy:0.0.1-SNAPSHOT
+
+Remake docker image:
+./mvnw spring-boot:build-image
+
+You can test this by hitting the endpoint on your browser using:
+http://localhost:8080/search/{search term}  ex. http://localhost:8080/search/HAHAHA
+
+Prerequisites:
+Docker installed locally and Spring Boot 2.3.0.M1 installed which most likely is already installed if youre using an
+up-to-date version of spring boot.
